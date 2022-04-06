@@ -1,0 +1,373 @@
+/* ========================================================================
+   UGM Journal Homepage stylesheet
+   v0.1; 21 October 2019
+   (c) 2019 Joaquim Baeta <mail@joaquimbaeta.com>
+   (c) 2019 Jeffri J. S. <jeffri.junianto.s@ugm.ac.id>
+        for Universitas Gadjah Mada
+  
+   This program is free software: you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   You should have received a copy of the GNU General Public License
+   along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+   ------------------------------------------------------------------------
+     
+   Table of contents 
+
+   1.......Typography
+   2.......Global
+   3.......Homepage
+   4.......Register
+   5.......Login
+
+   ======================================================================== */
+
+
+/* 1 Typography */
+
+@font-face {
+    font-family: "Vag Rounded";
+    src: url("https://ugm.ac.id/fonts/vag_rounded_bold.eot");
+    src: url("https://ugm.ac.id/fonts/vag_rounded_bold.eot?#iefix") format("embedded-opentype"), url("https://ugm.ac.id/fonts/vag_rounded_bold.woff") format("woff"), url("https://ugm.ac.id/fonts/vag_rounded_bold.ttf") format("truetype"), url("https://ugm.ac.id/fonts/vag_rounded_bold.svg#VagRounded") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Gama Serif";
+    src: url("https://ugm.ac.id/fonts/gama-serif-regular-webfont.eot");
+    src: url("https://ugm.ac.id/fonts/gama-serif-regular-webfont.eot?#iefix") format("embedded-opentype"), url("https://ugm.ac.id/fonts/gama-serif-regular-webfont.woff") format("woff"), url("https://ugm.ac.id/fonts/gama-serif-regular-webfont.ttf") format("truetype"), url("https://ugm.ac.id/fonts/gama-serif-regular-webfont.svg#gamaserif") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Moon";
+    src: url("https://ugm.ac.id/fonts/moon_bold-webfont.eot");
+    src: url("https://ugm.ac.id/fonts/moon_bold-webfont.eot?#iefix") format("embedded-opentype"), url("https://ugm.ac.id/fonts/moon_bold-webfont.woff") format("woff"), url("https://ugm.ac.id/fonts/moon_bold-webfont.ttf") format("truetype"), url("https://ugm.ac.id/fonts/moon_bold-webfont.svg#moon") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url("https://ugm.ac.id/fonts/circular-std/CircularStd-Black.eot");
+    src: url("https://ugm.ac.id/fonts/circular-std/CircularStd-Black.eot?#iefix") format("embedded-opentype"), url("https://ugm.ac.id/fonts/circular-std/CircularStd-Black.woff") format("woff"), url("https://ugm.ac.id/fonts/circular-std/CircularStd-Black.ttf") format("truetype"), url("https://ugm.ac.id/fonts/circular-std/CircularStd-Black.svg#CircularStd-Black") format("svg");
+    font-weight: 900;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url("https://ugm.ac.id/fonts/circular-std/CircularStd-Bold.eot");
+    src: url("https://ugm.ac.id/fonts/circular-std/CircularStd-Bold.eot?#iefix") format("embedded-opentype"), url("https://ugm.ac.id/fonts/circular-std/CircularStd-Bold.woff") format("woff"), url("https://ugm.ac.id/fonts/circular-std/CircularStd-Bold.ttf") format("truetype"), url("https://ugm.ac.id/fonts/circular-std/CircularStd-Bold.svg#CircularStd-Bold") format("svg");
+    font-weight: bold;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: url("https://ugm.ac.id/fonts/circular-std/CircularStd-Book.eot");
+    src: url("https://ugm.ac.id/fonts/circular-std/CircularStd-Book.eot?#iefix") format("embedded-opentype"), url("https://ugm.ac.id/fonts/circular-std/CircularStd-Book.woff") format("woff"), url("https://ugm.ac.id/fonts/circular-std/CircularStd-Book.ttf") format("truetype"), url("https://ugm.ac.id/fonts/circular-std/CircularStd-Book.svg#CircularStd-Book") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url("https://ugm.ac.id/fonts/proxima-nova/ProximaNova-Regular.eot");
+    src: url("https://ugm.ac.id/fonts/proxima-nova/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("https://ugm.ac.id/fonts/proxima-nova/ProximaNova-Regular.woff") format("woff"), url("https://ugm.ac.id/fonts/proxima-nova/ProximaNova-Regular.ttf") format("truetype"), url("https://ugm.ac.id/fonts/proxima-nova/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url("https://ugm.ac.id/fonts/proxima-nova/ProximaNova-Semibold.eot");
+    src: url("https://ugm.ac.id/fonts/proxima-nova/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("https://ugm.ac.id/fonts/proxima-nova/ProximaNova-Semibold.woff") format("woff"), url("https://ugm.ac.id/fonts/proxima-nova/ProximaNova-Semibold.ttf") format("truetype"), url("https://ugm.ac.id/fonts/proxima-nova/ProximaNova-Semibold.svg#ProximaNova-Semibold") format("svg");
+    font-weight: 600;
+    font-style: normal
+}
+
+body {
+    font-family: 'Proxima Nova' !important;
+}
+
+
+/* 2 Global */
+
+.main-header {
+    background: #073c64;
+}
+
+.navbar-logo-text {
+    color: #fff;
+    font-family: 'Circular Std';
+    font-weight: 700;
+}
+
+.navbar-logo-text:hover {
+    color: #fff;
+    font-family: 'Circular Std';
+    font-weight: 700;
+}
+
+.navbar-logo {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 1.7rem;
+    max-width: 0;
+    text-align: left;
+}
+
+#userNav>.nav-item>.nav-link {
+    color: #fff;
+}
+
+.site-journal-body>.site-journal-title>a {
+    color: #073c64;
+    font-family: 'Circular Std';
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.site-journal-body>.site-journal-title>a:hover {
+    color: #1a2c43;
+    font-family: 'Circular Std';
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.site-footer {
+    background: #073c64;
+    border-top: 5px solid #fdcb2c;
+}
+
+.site-footer-content>p>a {
+    text-decoration: none !important;
+    color: #FDCB2C;
+}
+
+.site-about {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+#userNav .dropdown-menu,
+.language-toggle .dropdown-menu {
+    background: #1a2c43;
+}
+
+#userNav .dropdown-item:hover {
+    color: #FDCB2C;
+    background: transparent;
+    border: 1px solid #FDCB2C;
+}
+
+.language-toggle .dropdown-item:hover {
+    color: #FDCB2C;
+    background: transparent;
+    border: 1px solid #FDCB2C;
+}
+
+.main-header {
+    border-bottom: 5px solid #FDCB2C;
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .dropdown-item {
+    color: #fff;
+}
+
+/* 3 Homepage */
+
+.site-journal {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.site-journal-body {
+    margin-bottom: 3rem;
+}
+
+.site-journal-description {
+    text-align: justify;
+}
+
+.links>.btn {
+    background: #073c64;
+    border: 1px solid #073c64;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.links>.btn:hover {
+    background: #1a2c43;
+    border: 1px solid #1a2c43;
+    font-weight: 700;
+}
+
+.site-journal-img {
+    float: right;
+    margin-left: 3rem;
+}
+
+.site-journal-img>img {
+    box-shadow: 0px 0px 3px 0px #000;
+}
+
+.browse h3 {
+    margin-top: 0;
+    font-family: 'Circular Std', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.browse a {
+    color: #073c64;
+}
+
+.browse a:hover {
+    color: #1a2c43;
+}
+
+.pkp_block {
+    flex: 100%;
+    width: 100%;
+}
+
+.indexedJournal {
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'Proxima Nova' !important;
+}
+
+.label-dark {
+    color: white;
+    background: grey;
+    font-size: 0.6rem;
+    padding: 4px;
+}
+
+.card-s {
+    border: 3px solid #007398;
+    /* height: 149px; */
+}
+
+.card-w {
+    border: 3px solid purple;
+    /* height: 149px; */
+}
+
+.card-d {
+    border: 3px solid #f68b1f;
+    /* height: 149px; */
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile: */
+    .card-s {
+        margin: 0 0 4% 0;
+    }
+
+    .card-w {
+        margin: 0 0 4% 0;
+    }
+
+    .browse {
+        margin-top: 2em;
+    }
+
+    .site-about {
+        margin-top: -7%;
+    }
+}
+
+.indexedBy {
+    margin-top: 3%;
+    font-family: 'Proxima Nova' !important;
+    font-size: 0.9rem;
+}
+
+.card-content {
+    padding: 0;
+}
+
+.card-content > a {
+    color: #1a2c43;
+}
+
+.card-content > h1 {
+    font-size: 1.4rem;
+}
+
+.font-footer > a, .font-footer > em {
+    color: #FDCB2C;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile: */
+    .cluster-cover {
+        width: 180px;
+        height: 255px;
+    }
+    .navbar-logo {
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .cluster-cover {
+        width: 241px;
+        height: 340px;
+    }
+}
+
+/* 4 Register */
+
+.regist-header>h1 {
+    font-family: 'Circular Std', sans-serif;
+}
+
+.list-group-item-heading {
+    font-family: 'Circular Std', sans-serif;
+}
+
+.btn-auth {
+    background: #073c64;
+    color: #fff;
+}
+
+.btn-auth:hover {
+    background: #1a2c43;
+    color: #fff;
+}
+
+.form-group-login>a {
+    color: #073c64;
+}
+
+
+/* 5 Login */
+
+.login-header>h1 {
+    font-family: 'Circular Std', sans-serif;
+}
+
+.form-group-forgot>small>a {
+    color: #073c64;
+}
+
+.form-group-register>a {
+    color: #073c64;
+}
