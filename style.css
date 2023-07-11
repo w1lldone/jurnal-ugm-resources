@@ -205,7 +205,7 @@ body {
 
 .browse h3 {
     margin-top: 0;
-    font-family: 'Roboto', sans-serif, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 1rem;
@@ -322,11 +322,11 @@ body {
 /* 4 Register */
 
 .regist-header>h1 {
-    font-family: 'Roboto', sans-serif, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .list-group-item-heading {
-    font-family: 'Roboto', sans-serif, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .btn-auth {
@@ -347,7 +347,7 @@ body {
 /* 5 Login */
 
 .login-header>h1 {
-    font-family: 'Roboto', sans-serif, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .form-group-forgot>small>a {
