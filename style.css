@@ -55,48 +55,11 @@
     font-style: normal
 }
 
-@font-face {
-    font-family: 'Circular Std';
-    src: url("https://ugm.ac.id/fonts/circular-std/CircularStd-Black.eot");
-    src: url("https://ugm.ac.id/fonts/circular-std/CircularStd-Black.eot?#iefix") format("embedded-opentype"), url("https://ugm.ac.id/fonts/circular-std/CircularStd-Black.woff") format("woff"), url("https://ugm.ac.id/fonts/circular-std/CircularStd-Black.ttf") format("truetype"), url("https://ugm.ac.id/fonts/circular-std/CircularStd-Black.svg#CircularStd-Black") format("svg");
-    font-weight: 900;
-    font-style: normal
-}
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@400;700;900&display=swap');
 
-@font-face {
-    font-family: 'Circular Std';
-    src: url("https://ugm.ac.id/fonts/circular-std/CircularStd-Bold.eot");
-    src: url("https://ugm.ac.id/fonts/circular-std/CircularStd-Bold.eot?#iefix") format("embedded-opentype"), url("https://ugm.ac.id/fonts/circular-std/CircularStd-Bold.woff") format("woff"), url("https://ugm.ac.id/fonts/circular-std/CircularStd-Bold.ttf") format("truetype"), url("https://ugm.ac.id/fonts/circular-std/CircularStd-Bold.svg#CircularStd-Bold") format("svg");
-    font-weight: bold;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'Circular Std';
-    src: url("https://ugm.ac.id/fonts/circular-std/CircularStd-Book.eot");
-    src: url("https://ugm.ac.id/fonts/circular-std/CircularStd-Book.eot?#iefix") format("embedded-opentype"), url("https://ugm.ac.id/fonts/circular-std/CircularStd-Book.woff") format("woff"), url("https://ugm.ac.id/fonts/circular-std/CircularStd-Book.ttf") format("truetype"), url("https://ugm.ac.id/fonts/circular-std/CircularStd-Book.svg#CircularStd-Book") format("svg");
-    font-weight: normal;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'Proxima Nova';
-    src: url("https://ugm.ac.id/fonts/proxima-nova/ProximaNova-Regular.eot");
-    src: url("https://ugm.ac.id/fonts/proxima-nova/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("https://ugm.ac.id/fonts/proxima-nova/ProximaNova-Regular.woff") format("woff"), url("https://ugm.ac.id/fonts/proxima-nova/ProximaNova-Regular.ttf") format("truetype"), url("https://ugm.ac.id/fonts/proxima-nova/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
-    font-weight: normal;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'Proxima Nova';
-    src: url("https://ugm.ac.id/fonts/proxima-nova/ProximaNova-Semibold.eot");
-    src: url("https://ugm.ac.id/fonts/proxima-nova/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("https://ugm.ac.id/fonts/proxima-nova/ProximaNova-Semibold.woff") format("woff"), url("https://ugm.ac.id/fonts/proxima-nova/ProximaNova-Semibold.ttf") format("truetype"), url("https://ugm.ac.id/fonts/proxima-nova/ProximaNova-Semibold.svg#ProximaNova-Semibold") format("svg");
-    font-weight: 600;
-    font-style: normal
-}
 
 body {
-    font-family: 'Proxima Nova' !important;
+    font-family: 'PT Sans', sans-serif !important;
 }
 
 
@@ -108,13 +71,13 @@ body {
 
 .navbar-logo-text {
     color: #fff;
-    font-family: 'Circular Std';
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
 
 .navbar-logo-text:hover {
     color: #fff;
-    font-family: 'Circular Std';
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
 
@@ -134,14 +97,14 @@ body {
 
 .site-journal-body>.site-journal-title>a {
     color: #073c64;
-    font-family: 'Circular Std';
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 1.4rem;
 }
 
 .site-journal-body>.site-journal-title>a:hover {
     color: #1a2c43;
-    font-family: 'Circular Std';
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 1.4rem;
 }
@@ -178,11 +141,28 @@ body {
     border: 1px solid #FDCB2C;
 }
 
+#languageLargeNav .dropdown-toggle {
+    color: #f7f7f7;
+}
+
+@media (min-width: 992px) {
+    .language-toggle {
+        left: 92%;
+    }
+}
+
+@media (min-width: 992px) {
+    #userNav {
+        right: 6rem !important;
+    }
+}
+
 .main-header {
     border-bottom: 5px solid #FDCB2C;
 }
 
-.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .dropdown-item {
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .dropdown-item {
     color: #fff;
 }
 
@@ -225,7 +205,7 @@ body {
 
 .browse h3 {
     margin-top: 0;
-    font-family: 'Circular Std', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 1rem;
@@ -247,7 +227,7 @@ body {
 .indexedJournal {
     font-size: 1.1rem;
     font-weight: bold;
-    font-family: 'Proxima Nova' !important;
+    font-family: 'PT Sans', sans-serif !important;
 }
 
 .label-dark {
@@ -274,6 +254,7 @@ body {
 
 
 @media only screen and (max-width: 768px) {
+
     /* For mobile: */
     .card-s {
         margin: 0 0 4% 0;
@@ -294,7 +275,7 @@ body {
 
 .indexedBy {
     margin-top: 3%;
-    font-family: 'Proxima Nova' !important;
+    font-family: 'PT Sans', sans-serif !important;
     font-size: 0.9rem;
 }
 
@@ -302,30 +283,35 @@ body {
     padding: 0;
 }
 
-.card-content > a {
+.card-content>a {
     color: #1a2c43;
 }
 
-.card-content > h1 {
+.card-content>h1 {
     font-size: 1.4rem;
 }
 
-.font-footer > a, .font-footer > em {
+.font-footer>a,
+.font-footer>em {
     color: #FDCB2C;
     text-decoration: none;
 }
 
 @media only screen and (max-width: 768px) {
+
     /* For mobile: */
     .cluster-cover {
         width: 180px;
         height: 255px;
     }
+
     .navbar-logo {
         display: none;
     }
 }
+
 @media only screen and (min-width: 768px) {
+
     /* For desktop: */
     .cluster-cover {
         width: 241px;
@@ -336,11 +322,11 @@ body {
 /* 4 Register */
 
 .regist-header>h1 {
-    font-family: 'Circular Std', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .list-group-item-heading {
-    font-family: 'Circular Std', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .btn-auth {
@@ -361,7 +347,7 @@ body {
 /* 5 Login */
 
 .login-header>h1 {
-    font-family: 'Circular Std', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .form-group-forgot>small>a {
